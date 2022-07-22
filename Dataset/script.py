@@ -73,7 +73,7 @@ class SampleReader:
 
         for i in range(len(shapes)):
             shape_samples = shape_series[i]
-            for m in range(shape_samples.shape[1]):
+            for m in range(shape_samples.shape[0]):
                 completed_shape[m][i] = shape_samples.loc[m]
         completed_shape = np.nan_to_num(completed_shape)
 
